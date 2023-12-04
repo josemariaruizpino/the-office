@@ -1,0 +1,32 @@
+.footer{
+    background-color: #015368;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 114px;
+    padding: 0 83px;
+
+    &__text{
+        color: #FFF;
+        font-family: Rising Sun;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 18px; /* 128.571% */
+        padding: 0 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer{
+        height: 46px;
+        margin-bottom: 0px;
+        padding : 0;
+
+        &__text{
+            font-size: 12px;
+            width: 90%;
+        }
+    }
+}

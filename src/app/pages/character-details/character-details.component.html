@@ -1,0 +1,43 @@
+<div class="character-details">
+<app-header/>
+    <div class="maincontent">
+        <div class="mainbanner">
+            <div class="mainbanner__textcontainer">
+                <div>
+                    <img class="mainbanner__arrow" src="../../../assets/arrow-scroll.png" alt="volver"  [routerLink]="['/']">
+                    <h1 class="mainbanner__title">{{ character.name }}</h1>
+                    <h1 class="mainbanner__subtitle">{{ character.job[0] }}</h1>
+                </div>
+                <div>
+                    <p class="mainbanner__text">“I guess the attitude that I’ve tried to create here is that I’m a friend first and a boss second and probably an entertainer third.
+                        </p>
+                        <p class="mainbanner__boldtext"><b>I am Beyoncé, always.”</b></p>
+                </div>
+            </div>
+            <div class="mainbanner__imagecontainer">
+                <img src="../../../assets/dog.png" class="mainbanner__dog">
+                <img class="mainbanner__building" src="../../../assets/building.png">
+            </div>
+        </div>
+        <div class="episodes">
+            <div class="episodes__header">
+                <img class="episodes__header-avatar" src="../../../assets/characters/{{character.id}}.png">
+                <p class="episodes__header-title">Appearances</p>
+            </div>
+            <div *ngIf="character.episodes && character.episodes.length > 0" class="episodes__container">
+                <div class="episodes__subtitle"  (click)="showEpisodes()">
+                    <p>Episodios:</p>
+                    <img src="../../../assets/chevron.png"/>
+                </div>
+                <ul [ngClass]="{'active': isClassActive}">
+                <li *ngFor="let episodeData of character.episodes"  class="episodes__items">
+                    <ng-container *ngIf="episodeData.episode">
+                        E{{ episodeData.episode.id }} - {{ episodeData.episode.title }} 
+                    </ng-container>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<app-footer></app-footer>
+</div>

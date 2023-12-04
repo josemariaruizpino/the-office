@@ -1,0 +1,31 @@
+<div class="characters">
+<app-header/>
+<div class="maincontent">
+    <div class="mainbanner">
+        <div class="mainbanner__textcontainer">
+            <div>
+                <h1 class="mainbanner__title">Dunder Mifflin</h1>
+                <h1 class="mainbanner__subtitle">Paper company</h1>
+            </div>
+            <div>
+                <p class="mainbanner__text">Our team is made up of let's say... curious people. Each one is stranger than the last and we strive every day to be even rarer.</p>
+                <p class="mainbanner__text">Do you want to know us more? Ok, at your own risk.</p>
+            </div>
+        </div>
+        <div class="mainbanner__imagecontainer">
+            <img src="../../../assets/dog.png" class="mainbanner__dog">
+            <img class="mainbanner__building" src="../../../assets/building.png">
+        </div>
+    </div>
+    <div class="cardcontainer">
+        <div class="card" *ngFor="let character of mainCharacters"  [routerLink]="['/character', character.id]">
+            <img src="../../../assets/characters/{{character.id}}.png" class="card__avatar">
+            <div class="card__infocontainer">
+                <p class="card__name">{{ character.name }}</p>
+                <p class="card__job">{{ character.job[0] }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer/>
+</div>

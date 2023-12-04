@@ -1,0 +1,101 @@
+.navbar {
+  background-color: white;
+}
+.navbar__logo {
+  padding: 24px 83px;
+}
+
+.mainbanner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 83px;
+}
+.mainbanner__textcontainer {
+  width: 25%;
+}
+.mainbanner__title {
+  color: #015368;
+  font-family: "Rising Sun";
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 48px;
+  margin-bottom: 0;
+}
+.mainbanner__subtitle {
+  color: #015368;
+  font-family: "Rising Sun";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  margin-top: 0;
+}
+.mainbanner__dog {
+  position: absolute;
+  padding-top: 113px;
+}
+
+.cardcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 83px;
+  margin-right: 83px;
+  gap: 24px;
+  margin-bottom: 116px;
+}
+
+.card {
+  background-color: white;
+  align-items: center;
+  width: 282px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card__avatar {
+  width: 115px;
+  padding-top: 24px;
+}
+.card__name {
+  color: #009FC7;
+  text-align: center;
+  font-family: Rising Sun;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 8px;
+}
+.card__job {
+  color: #015368;
+  text-align: center;
+  font-family: Rising Sun;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  margin-top: 0px;
+}
+
+.footer {
+  background-color: #015368;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 114px;
+  padding: 0 83px;
+}
+.footer__text {
+  color: #FFF;
+  font-family: Rising Sun;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px; /* 128.571% */
+  padding: 0 16px;
+}
